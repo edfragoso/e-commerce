@@ -60,11 +60,13 @@ export const PriorityFilter = styled.ul`
   position: absolute;
   background-color: #ffff;
   border-radius: 4px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
   list-style: none;
   width: 250px;
   top: 100%;
+  padding: 12px 16px;
+  z-index: 999;
 
   li {
     color: var(--text-dark);
@@ -73,7 +75,7 @@ export const PriorityFilter = styled.ul`
     line-height: 22px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       border-bottom: 0.5px solid var(--orange-low);
     }
   }
