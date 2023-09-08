@@ -4,11 +4,11 @@ import { ProductCard } from "./ProductCard";
 import { ListContainer } from "./Styles/styledProducCard";
 
 export function ProductList() {
-  const { products } = useProducts();
+  const { data } = useProducts();
   /* console.log(products) */
   return (
     <ListContainer>
-      {products?.map((product) => (
+      {data?.map((product) => (
         <ProductCard
           key={product.id}
           title={product.name}
