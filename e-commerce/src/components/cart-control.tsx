@@ -3,11 +3,11 @@ import { CartIcon } from "./icons/cart-icon";
 import { CartCount, Container } from "./Styles/styledCartControl";
 
 export function CartControl() {
-    const { value } = useLocalStorage("cart-item", []); // Substitua [] pelo valor inicial apropriado
+    const { value } = useLocalStorage("cart-item", []); 
     return (
       <Container>
         <CartIcon />
-        {value.length && <CartCount>{value.length}</CartCount>} {/* Correção na propriedade length */}
+        {value.length > 0 && <CartCount>{value.length}</CartCount>} 
       </Container>
   );
 }
