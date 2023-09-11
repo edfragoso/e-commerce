@@ -10,11 +10,7 @@ export function Header() {
     <TagHeader>
       <Logo className={sairaStencil.className}>e-Commerce</Logo>
       <div>
-        <PrimaryInputSearchIcon
-          value={search}
-          handleChange={setSearch}
-          placeholder="Procura por algo específico?"
-        />
+        <PrimaryInputSearchIcon value={search} handleChange={setSearch} />
         <CartControl />
       </div>
     </TagHeader>
