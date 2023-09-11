@@ -8,8 +8,12 @@ export const FilterList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 15px;
   list-style: none;
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    gap: 40px;
+  }
 `;
 
 export const FilterItem = styled.li<FilterItemProps>`
@@ -18,11 +22,16 @@ export const FilterItem = styled.li<FilterItemProps>`
   font-family: inherit;
   font-weight: ${(props) => (props.selected ? "600" : "400")};
   text-align: center;
-  line-height: 22px;
-  font-size: 16px;
+  line-height: 18px;
+  font-size: 14px;
   cursor: pointer;
   border-bottom: ${(props) =>
     props.selected ? "4px solid var(--orange-low)" : ""};
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    line-height: 22px;
+    font-size: 16px;
+  }
 `;
 
 export const FilterContainer = styled.div`
@@ -36,7 +45,8 @@ export const FilterContainerPripority = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-
+  left: 10px;
+ 
   button {
     cursor: pointer;
     border: none;
@@ -51,7 +61,11 @@ export const FilterContainerPripority = styled.div`
     justify-content: center;
 
     svg {
-      margin-left: 16px;
+      margin-left: 3px;
+
+      @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+        margin-left: 10px;
+      }
     }
   }
 `;
@@ -63,10 +77,10 @@ export const PriorityFilter = styled.ul`
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
   list-style: none;
-  width: 250px;
+  width: 200px;
   top: 100%;
-  padding: 12px 16px;
-  z-index: 999;
+  right: 8px;
+  z-index: 9999;
 
   li {
     color: var(--text-dark);

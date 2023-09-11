@@ -11,7 +11,7 @@ export const TagHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px ;
+  padding: 12px 24px;
 
   > div {
     display: flex;
@@ -20,7 +20,7 @@ export const TagHeader = styled.header`
     gap: 10px;
 
     @media(min-width: ${props => props.theme.desktopBreakpoint}){
-      padding: 20px 160px;
+      padding: 10px 100px;
     }
   }
 
