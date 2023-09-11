@@ -20,16 +20,22 @@ export const PrimaryInput = styled.input`
 
 export const InputContainer = styled.div`
     position: relative;
-    width: 250px;
-
-    svg{
-        position: absolute;
-        right: 10px;
-        top: 20%;
-        transform: translateY(-50);
-    }
-
+    width: 200px;
+    
     @media(min-width: ${props => props.theme.desktopBreakpoint}){
         width: 352px;
     }
+
+    svg{
+        position: absolute;
+        right: 3px;
+        top: 20%;
+        transform: translateY(-50);
+
+        @media(min-width: ${props => props.theme.desktopBreakpoint})  {
+            right: 10px;
+            top: 45%;
+        }
+    }
+
 `;
