@@ -1,13 +1,20 @@
+"use client"
 import { InputHTMLAttributes } from "react";
 import { InputContainer, PrimaryInput } from "./Styles/styledPrimary-input";
 import { SearchIcon } from "./icons/search-icon";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  value: string;
+  handleChange: (value: string) => void;
+}
 
 export function PrimaryInputSearchIcon(props: InputProps) {
   return (
     <InputContainer>
-      <PrimaryInput {...props} />
+      <PrimaryInput
+        onChange={(event) => props.handleChange(event.target.value)}
+        placeholder="Procura por algo especifico?"
+      />
       <SearchIcon />
     </InputContainer>
   );

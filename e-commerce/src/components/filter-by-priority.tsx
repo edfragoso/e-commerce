@@ -5,7 +5,7 @@ import {
 } from "./Styles/styledFilterBar";
 import { ArrowIcon } from "./icons/arrow-icon";
 import { useFilter } from "@/hooks/useFilter";
-import { PriorityTypes } from "@/types/prioruty-types";
+import { PriorityTypes } from "@/types/priority-types";
 
 export function FilterByPriority() {
   const [isOpen, setIsOpen] = useState(false);
