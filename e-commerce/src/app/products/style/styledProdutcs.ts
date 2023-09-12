@@ -9,19 +9,22 @@ export const Cointainer = styled.div`
   section {
     display: flex;
     justify-content: center;
-    width: 100%;
     margin-top: 24px;
+    width: 100%;
     gap: 32px;
 
     img {
+      border-radius: 10px;
       max-width: 640px;
       width: 50%;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     }
 
     > div {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      margin-left: 20px;
 
       button {
         display: flex;
@@ -41,9 +44,9 @@ export const Cointainer = styled.div`
         font-size: 16px;
         transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 
-        &:hover{
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-            transform: scale(1.02)
+        &:hover {
+          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.8);
+          transform: scale(1.01);
         }
       }
     }
