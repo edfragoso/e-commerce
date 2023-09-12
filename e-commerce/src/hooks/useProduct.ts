@@ -18,11 +18,13 @@ const fetcher = (productId: string): AxiosPromise<ProductFetchResponse> => {
   });
 };
 
-export function useProduct(id: string) {
-  const { data } = useQuery(["product", id], () => fetcher(id), {
-    enabled: !!id,
+export function useProduct(id: string){
+  const { data }  = useQuery({
+      queryFn: () => fetcher(id),
+      queryKey: ['product', id],
+      enabled: !!id,
+      staleTime: 1000 * 60 * 5
   });
-
   return {
     data: data?.data?.data?.Product,
   };
