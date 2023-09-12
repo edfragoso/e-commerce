@@ -8,6 +8,13 @@ export const Card = styled.div`
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.4);
   width: 256px;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.8);
+    transform: scale(1.01);
+  }
 
   img {
     width: 256px;
