@@ -8,7 +8,7 @@ export function Header() {
   const { setSearch, search } = useFilter();
   return (
     <TagHeader>
-      <Logo className={sairaStencil.className}>e-Commerce</Logo>
+      <Logo className={sairaStencil.className} href="/">e-Commerce</Logo>
       <div>
         <PrimaryInputSearchIcon value={search} handleChange={setSearch} />
         <CartControl />
