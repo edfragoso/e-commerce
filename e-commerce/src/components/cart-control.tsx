@@ -3,7 +3,7 @@ import { CartIcon } from "./icons/cart-icon";
 import { CartCount, Container } from "./Styles/styledCartControl";
 
 export function CartControl() {
-    const { value } = useLocalStorage("cart-item", []); 
+    const { value } = useLocalStorage("cart-items", []); 
     return (
       <Container>
         <CartIcon />
