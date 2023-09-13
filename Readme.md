@@ -4,7 +4,7 @@ Bem-vindo! Este repositório contém minha solução para o Frontend Challenge d
 
 Link do repositório Rocketseat - [frontend-challenge](https://github.com/Rocketseat/frontend-challenge)
 
-![Texto alternativo](../e-commerce/public/e-Commerce%20.png)
+[Texto alternativo](https://github.com/edfragoso/e-commerce/blob/main/e-commerce/public/e-Commerce%20.png)
 
 ## 🎯 Projeto
 
