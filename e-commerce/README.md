@@ -1,22 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## e-Commerce
 
-## Getting Started
+Bem-vindo! Este repositório contém minha solução para o Frontend Challenge de código aberto da Rocketseat.
 
-First, run the development server:
+Link do repositório Rocketseat - [frontend-challenge](https://github.com/Rocketseat/frontend-challenge)
 
+![Texto alternativo](../e-commerce/public/e-Commerce%20.png)
+
+## 🎯 Projeto
+
+O objetivo deste projeto é de praticar os conteúdos estudados recentemente em curso de desenvolvimento full-stack.
+Essa aplicação foi desenvolvida com o Nextjs, um framework de JavaScript construído sobre o React. 
+
+
+O desafio é implementar um e-commerce de venda de canecas e camisetas que deverá contar com as seguintes funcionalidades:
+
+ - Catálogo de produtos com paginação
+ - Filtrar produtos por categoria
+ - Pesquise por nome do produto
+ - Adicionar e remover produtos do carrinho
+ - Página de check-out
+
+ ## 📑 Requisitos
+
+ - Protótipo [Figma](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449) 
+ 
+ - Next.js e TypeScript
+ - Componentes estilizados com style-components
+ - LocaStorage gerenciando o carrinho de compras
+
+## 💻 Instalação
+
+1.Clone esse repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/edfragoso/e-commerce
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Backend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.Acesse a pasta do projeto
+```
+cd api
+```
+2.Inicie o servidor
+```
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frontend
+
+1.Acesse a pasta do projeto
+```
+cd e-commerce
+```
+2.Instale as dependências
+```
+npm install
+```
+3.Inicie o frontend
+```
+npm run dev
+```
+
+Abra seu navegado em [http://localhost:3000](http://localhost:3000)
+
+
 
 ## Learn More
 
@@ -29,6 +76,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
