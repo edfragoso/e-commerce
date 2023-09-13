@@ -14,7 +14,8 @@ import { ProductInCart } from "@/types/products";
 import { formatValue } from "@/utils/formatPrice";
 import { CartItem } from "@/components/cart/page";
 import { Item } from "@/components/cart/style/styleCartItem";
-import { Divider } from "@/components/Styles/styledDivider";
+import { DividerSpace } from "@/components/divider";
+
 
 export default function CartPage() {
   const { value, updateLocalStorage } = useLocalStorage<ProductInCart[]>(
@@ -80,7 +81,7 @@ export default function CartPage() {
             <p>Entrega</p>
          <p>{formatValue(delivery)}</p>
           </TotalItem>
-          <Divider />
+          <DividerSpace />
           <TotalItem isBold={true}>
             <p>Total</p>
             <p>{TotWithDelivery}</p>
