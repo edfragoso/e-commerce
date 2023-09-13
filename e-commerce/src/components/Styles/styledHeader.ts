@@ -11,8 +11,13 @@ export const TagHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
-
+  padding: 10px 18px;
+  
+  @media(min-width: ${props => props.theme.tableBreakpoint}){
+    padding: 10px 50px;
+  }
+  
+ 
   > div {
     display: flex;
     align-items: center;
@@ -22,13 +27,10 @@ export const TagHeader = styled.header`
     @media(min-width: ${props => props.theme.desktopBreakpoint}){
       padding: 10px 100px;
     }
+
   }
 
-  @media (min-width: ${props => props.theme.desktopBreakpoint}) {
-    font-size: 40px;
-    padding: 20px 160px;
-    gap: 24px;
-  }
+  
 `;
 
 export const Logo = styled.a`
@@ -37,6 +39,7 @@ export const Logo = styled.a`
     font-size: 20px;
     line-height: 150%;
     cursor: pointer;
+    text-decoration: none;
 
     @media(min-width: ${props => props.theme.desktopBreakpoint}) {
       font-size: 40px;
