@@ -35,6 +35,7 @@ export default function Product({
     }
     alert("Item adicionado ao carrinho")
     window.location.reload();
+    
   };
   return (
     <DefaultPageLayout>
