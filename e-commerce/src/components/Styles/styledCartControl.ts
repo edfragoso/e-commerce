@@ -2,9 +2,13 @@ import { styled } from 'styled-components';
 
 export const Container = styled.div`
     position: relative;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+
 `;
 
-export const CartCount = styled.span`
+export const CartCount = styled.button`
     width: 17px;
     height: 17px;
     background-color: var(--delete-color);

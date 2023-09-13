@@ -19,14 +19,15 @@ export function useProducts() {
   const { data } = useQuery({
     queryFn: () => fetcher(query),
     queryKey: ["products", type, priority],
+    staleTime: 100 * 60 * 1,
   });
 
   const products = data?.data?.data?.allProducts;
   const filteredProducts = products?.filter((product) =>
     product.name.toLowerCase().includes(searchDeferred.toLowerCase())
   );
-  console.log(products);
-  console.log(filteredProducts);
+  /* console.log(products);
+  console.log(filteredProducts); */
   return {
     data: filteredProducts,
   };

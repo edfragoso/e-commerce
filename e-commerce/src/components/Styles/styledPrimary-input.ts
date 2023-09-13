@@ -9,7 +9,7 @@ export const PrimaryInput = styled.input`
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 15px;
     color: var(--text-dark);
 
     @media(min-width: ${props => props.theme.desktopBreakpoint}){

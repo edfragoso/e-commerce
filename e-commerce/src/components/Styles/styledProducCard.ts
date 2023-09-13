@@ -33,20 +33,13 @@ export const Card = styled.div`
     line-height: 150%;
     color: var(--shapes-dark);
   }
-  div {
+   div {
+    width: 100%;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    padding: 8px 0;
-
-    div {
-      padding: 0;
-      width: 228px;
-      height: 1px;
-      margin: 8px 0;
-      background: var(--shapes);
-    }
+    padding: 8px 12px;
   }
 `;
 
@@ -56,4 +49,8 @@ export const ListContainer = styled.div`
   grid-gap: 32px;
   max-width: 100%;
   margin-top: 32px;
+
+  @media(min-width: ${props => props.theme.desktopBreakpoint}) {
+      font-size: 40px;
+    }
 `;
