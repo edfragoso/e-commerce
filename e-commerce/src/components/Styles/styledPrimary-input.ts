@@ -34,7 +34,7 @@ export const InputContainer = styled.div`
 
         @media(min-width: ${props => props.theme.desktopBreakpoint})  {
             right: 10px;
-            top: 45%;
+            top: 25%;
         }
     }
 
