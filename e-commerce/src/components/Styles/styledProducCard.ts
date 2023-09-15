@@ -1,11 +1,45 @@
 import { styled } from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 32px;
+`;
+
+export const ButtonList = styled.ul`
+  position: relative;
+  top: 0px;
+  left: 70px;
+  
+  @media (min-width: ${(props) => props.theme.tableBreakpoin}){
+    left: 100px;
+  }
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    top: 10px;
+    left: 430px;
+  }
+`;
+
+export const ListContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 256px);
+  grid-gap: 32px;
+  max-width: 100%;
+  margin-top: 32px;
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    font-size: 40px;
+  }
+`;
+
 export const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   background-color: rgba(255, 255, 255, 0.4);
   width: 256px;
   cursor: pointer;
@@ -33,7 +67,7 @@ export const Card = styled.div`
     line-height: 150%;
     color: var(--shapes-dark);
   }
-   div {
+  div {
     width: 100%;
     display: flex;
     align-items: start;
@@ -41,16 +75,4 @@ export const Card = styled.div`
     flex-direction: column;
     padding: 8px 12px;
   }
-`;
-
-export const ListContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 256px);
-  grid-gap: 32px;
-  max-width: 100%;
-  margin-top: 32px;
-
-  @media(min-width: ${props => props.theme.desktopBreakpoint}) {
-      font-size: 40px;
-    }
 `;
